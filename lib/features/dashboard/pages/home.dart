@@ -15,8 +15,7 @@ class HomePage extends HookWidget {
     void fetchProducts() async {
       try {
         final fetchedProducts = await dashboardService.getProducts();
-        products.value =
-            fetchedProducts.take(10).toList(); // Membatasi 10 produk pertama
+        products.value = fetchedProducts.take(10).toList();
       } catch (error) {
         errorMessage.value = error.toString();
       } finally {
@@ -41,10 +40,10 @@ class HomePage extends HookWidget {
                   padding: const EdgeInsets.all(8.0),
                   child: GridView.builder(
                     gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 2, // Dua kolom
-                      crossAxisSpacing: 8.0, // Spasi antar kolom
-                      mainAxisSpacing: 8.0, // Spasi antar baris
-                      childAspectRatio: 2 / 3, // Rasio tinggi dan lebar
+                      crossAxisCount: 2,
+                      crossAxisSpacing: 8.0,
+                      mainAxisSpacing: 8.0,
+                      childAspectRatio: 2 / 3,
                     ),
                     itemCount: 10,
                     itemBuilder: (context, index) {
