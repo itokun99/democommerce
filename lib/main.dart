@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'features/auth/pages/login.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -10,11 +12,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Flutter Demo',
+        title: 'Ecommerce App',
         theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: const MyHomePage(title: 'Flutter Demo Home Page'));
+        home: LoginPage());
   }
 }
