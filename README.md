@@ -11,6 +11,9 @@ flutter devices {emulator}
 flutter run
 ```
 
+## preview
+![enter image description here](https://github.com/itokun99/democommerce/blob/main/ss/ss.png?raw=true)
+
 A few resources to get you started if this is your first Flutter project:
 
 For help getting started with Flutter development, view the
